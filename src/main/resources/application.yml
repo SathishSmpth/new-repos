@@ -1,0 +1,23 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: KAMATCHI-BOUTIQUE-API
+  datasource:
+    url: jdbc:postgresql://localhost:5433/kamatchi-botique
+    username: postgres
+    password: sathish
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    org:
+      springframework:
+        context: DEBUG
+
+app:
+  jwt-secret: bXktand0LXNlY3JldC1rZXktZm9yLWUtc2hvcC1hcHBsaWNhdGlvbg==
+  jwt-expires-in: 2629800000
